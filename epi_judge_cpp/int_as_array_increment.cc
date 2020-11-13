@@ -2,9 +2,28 @@
 
 #include "test_framework/generic_test.h"
 using std::vector;
+// vector<int> PlusOne(vector<int> A) {
+//   reverse(A.begin(), A.end());
+//   A[0]++;
+//   int i = 0;
+//   while (A[i] == 10) {
+//     A[i] = 0;
+//     if (i == A.size() - 1) A.push_back(0);
+//     A[++i]++;
+//   }
+//   reverse(A.begin(), A.end());
+//   return A;
+// }
 vector<int> PlusOne(vector<int> A) {
-  // TODO - you fill in here.
-  return {};
+  A.back()++;
+  for (int i = A.size() - 1; i > 0 && A[i] == 10; --i) {
+    A[i] = 0, ++A[i - 1];
+  }
+  if (A[0] == 10) {
+    A[0] = 0;
+    A.insert(A.begin(), 1);
+  }
+  return A;
 }
 
 int main(int argc, char* argv[]) {

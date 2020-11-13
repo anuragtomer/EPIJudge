@@ -1,9 +1,18 @@
 #include "binary_tree_node.h"
 #include "test_framework/generic_test.h"
 
+bool IsSymmetricHelper(const unique_ptr<BinaryTreeNode<int>>& left,
+                       const unique_ptr<BinaryTreeNode<int>>& right) {
+  if (!left) return !right;
+  if (!right) return !left;
+  return left->data == right->data &&
+         IsSymmetricHelper(left->left, right->right) &&
+         IsSymmetricHelper(left->right, right->left);
+}
+
 bool IsSymmetric(const unique_ptr<BinaryTreeNode<int>>& tree) {
-  // TODO - you fill in here.
-  return true;
+  if (tree == nullptr) return true;
+  return IsSymmetricHelper(tree->left, tree->right);
 }
 
 int main(int argc, char* argv[]) {

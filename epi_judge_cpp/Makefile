@@ -805,6 +805,24 @@ is_tree_symmetric: $(BUILD_DIR)/is_tree_symmetric
 
 .PHONY: is_tree_symmetric
 
+# size_of_largest_complete_subtree.cc
+
+$(BUILD_DIR)/size_of_largest_complete_subtree: $(SRC_DIR)/size_of_largest_complete_subtree.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+size_of_largest_complete_subtree: $(BUILD_DIR)/size_of_largest_complete_subtree
+	$< $(PROGRAM_ARGS)
+
+.PHONY: size_of_largest_complete_subtree
+
+
+# size_of_k_balanced_subtree.cc
+
+$(BUILD_DIR)/size_of_k_balanced_subtree: $(SRC_DIR)/size_of_k_balanced_subtree.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+size_of_k_balanced_subtree: $(BUILD_DIR)/size_of_k_balanced_subtree
+	$< $(PROGRAM_ARGS)
+
+.PHONY: size_of_k_balanced_subtree
 
 # is_valid_parenthesization.cc
 
@@ -2406,6 +2424,7 @@ all: \
     $(BUILD_DIR)/search_row_col_sorted_matrix \
     $(BUILD_DIR)/search_shifted_sorted_array \
     $(BUILD_DIR)/search_unknown_length_array \
+	$(BUILD_DIR)/size_of_largest_complete_subtree \
     $(BUILD_DIR)/smallest_nonconstructible_value \
     $(BUILD_DIR)/smallest_subarray_covering_all_values \
     $(BUILD_DIR)/smallest_subarray_covering_set \

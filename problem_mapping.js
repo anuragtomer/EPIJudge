@@ -65,7 +65,7 @@ problem_mapping = {
                 "passed": 0,
                 "total": 10000
             },
-            "Python: closest_int_same_weight.py": { 
+            "Python: closest_int_same_weight.py": {
                 "passed": 0,
                 "total": 10000
             }
@@ -186,7 +186,7 @@ problem_mapping = {
         },
         "5.01 The Dutch national flag problem": {
             "C++: dutch_national_flag.cc": {
-                "passed": 0,
+                "passed": 204,
                 "total": 204
             },
             "Java: DutchNationalFlag.java": {
@@ -200,7 +200,7 @@ problem_mapping = {
         },
         "5.02 Increment an arbitrary-precision integer": {
             "C++: int_as_array_increment.cc": {
-                "passed": 0,
+                "passed": 505,
                 "total": 505
             },
             "Java: IntAsArrayIncrement.java": {
@@ -214,7 +214,7 @@ problem_mapping = {
         },
         "5.03 Multiply two arbitrary-precision integers": {
             "C++: int_as_array_multiply.cc": {
-                "passed": 0,
+                "passed": 1000,
                 "total": 1000
             },
             "Java: IntAsArrayMultiply.java": {
@@ -704,7 +704,7 @@ problem_mapping = {
         },
         "7.02 Reverse a single sublist": {
             "C++: reverse_sublist.cc": {
-                "passed": 0,
+                "passed": 210,
                 "total": 210
             },
             "Java: ReverseSublist.java": {
@@ -788,7 +788,7 @@ problem_mapping = {
         },
         "7.08 Remove duplicates from a sorted list": {
             "C++: remove_duplicates_from_sorted_list.cc": {
-                "passed": 0,
+                "passed": 203,
                 "total": 203
             },
             "Java: RemoveDuplicatesFromSortedList.java": {
@@ -802,7 +802,7 @@ problem_mapping = {
         },
         "7.09 Implement cyclic right shift for singly linked lists": {
             "C++: list_cyclic_right_shift.cc": {
-                "passed": 0,
+                "passed": 2,
                 "total": 507
             },
             "Java: ListCyclicRightShift.java": {
@@ -1002,7 +1002,7 @@ problem_mapping = {
     "Chapter 09: Binary Trees": {
         "9.01 Test if a binary tree is height-balanced": {
             "C++: is_tree_balanced.cc": {
-                "passed": 0,
+                "passed": 3852,
                 "total": 3852
             },
             "Java: IsTreeBalanced.java": {
@@ -1014,9 +1014,37 @@ problem_mapping = {
                 "total": 3852
             }
         },
+        "9.01.01 Return the size of largest complete subtree": {
+            "C++: size_of_largest_complete_subtree.cc": {
+                "passed": 5,
+                "total": 5
+            },
+            "Java: ": {
+                "passed": 0,
+                "total": 5
+            },
+            "Python: ": {
+                "passed": 0,
+                "total": 5
+            }
+        },
+        "9.01.02 Return the size of largest k balanced subtree": {
+            "C++: size_of_k_balanced_subtree.cc": {
+                "passed": 3,
+                "total": 3
+            },
+            "Java: ": {
+                "passed": 0,
+                "total": 3
+            },
+            "Python: ": {
+                "passed": 0,
+                "total": 3
+            }
+        },
         "9.02 Test if a binary tree is symmetric": {
             "C++: is_tree_symmetric.cc": {
-                "passed": 0,
+                "passed": 3852,
                 "total": 3852
             },
             "Java: IsTreeSymmetric.java": {
@@ -1030,7 +1058,7 @@ problem_mapping = {
         },
         "9.03 Compute the lowest common ancestor in a binary tree": {
             "C++: lowest_common_ancestor.cc": {
-                "passed": 0,
+                "passed": 948,
                 "total": 948
             },
             "Java: LowestCommonAncestor.java": {
@@ -1044,7 +1072,7 @@ problem_mapping = {
         },
         "9.04 Compute the LCA when nodes have parent pointers": {
             "C++: lowest_common_ancestor_with_parent.cc": {
-                "passed": 0,
+                "passed": 948,
                 "total": 948
             },
             "Java: LowestCommonAncestorWithParent.java": {

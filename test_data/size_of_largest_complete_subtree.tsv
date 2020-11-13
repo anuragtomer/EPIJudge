@@ -1,0 +1,6 @@
+binary_tree(int)	int
+[5, 8, 4, 2, 6, 8, 2, 5, 7]	9	TODO
+[5, 8, 4, 2, 6, 8, 2, null, 7]	3	TODO
+[5, 8, 4, 2, 6, 8, 2]	7	TODO
+[5, 8, 4, null, 6, null, 2, 7]	2	TODO
+[5]	1	TODO

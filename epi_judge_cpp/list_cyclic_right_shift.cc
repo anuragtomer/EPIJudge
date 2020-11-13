@@ -4,10 +4,32 @@
 #include "test_framework/generic_test.h"
 using std::shared_ptr;
 
+int Length(const shared_ptr<ListNode<int>>& L) {
+  shared_ptr<ListNode<int>> copy = L;
+  int len = 1;
+  while (copy->next) {
+    len++;
+    copy = copy->next;
+  }
+  return len;
+}
+
 shared_ptr<ListNode<int>> CyclicallyRightShiftList(shared_ptr<ListNode<int>> L,
                                                    int k) {
-  // TODO - you fill in here.
-  return nullptr;
+  int len = Length(L);
+  if (len <= 1) return L;
+  k = len - (k % len);
+  if (k == 0 || k == len) return L;
+  auto kahead = L;
+  auto phead = L;
+  while (k--) {
+    kahead = kahead->next;
+  }
+  L = kahead;
+  kahead->next = phead;
+  while (phead->next != L) phead = phead->next;
+  phead->next = nullptr;
+  return L;
 }
 
 int main(int argc, char* argv[]) {

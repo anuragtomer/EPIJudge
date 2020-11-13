@@ -1,5 +1,7 @@
 # EPI Judge
 
+Clone of [EPI](https://github.com/adnanazis/EPIJudge) for tracking personal progress.
+
 ## Beta 5
 
 ## Introduction
