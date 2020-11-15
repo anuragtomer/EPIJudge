@@ -16,11 +16,38 @@ struct BinaryTreeNode {
   int size;
 };
 
+/* Recursive */
+/*
 const BinaryTreeNode<int>* FindKthNodeBinaryTree(
     const unique_ptr<BinaryTreeNode<int>>& tree, int k) {
-  // TODO - you fill in here.
+  if (!tree.get()) return nullptr;
+  int left_size = tree->left ? tree->left->size : 0;
+  if (k <= left_size)
+    return FindKthNodeBinaryTree(tree->left, k);
+  else if (k == left_size + 1)
+    return tree.get();
+  else
+    return FindKthNodeBinaryTree(tree->right, k - (left_size + 1));
+}
+*/
+
+const BinaryTreeNode<int>* FindKthNodeBinaryTree(
+    const unique_ptr<BinaryTreeNode<int>>& tree, int k) {
+  auto const* iter = tree.get();
+  while (iter != nullptr) {
+    auto left_size = iter->left ? iter->left->size : 0;
+    if (k <= left_size)
+      iter = iter->left.get();
+    else if (k == left_size + 1)
+      return iter;
+    else {
+      k -= (left_size + 1);
+      iter = iter->right.get();
+    }
+  }
   return nullptr;
 }
+
 namespace test_framework {
 template <typename KeyT>
 struct SerializationTrait<std::unique_ptr<BinaryTreeNode<KeyT>>>
