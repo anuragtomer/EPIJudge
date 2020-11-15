@@ -999,8 +999,8 @@ problem_mapping = {
             }
         }
     },
-    "Chapter 09: Binary Trees": {
-        "9.01 Test if a binary tree is height-balanced": {
+    "Chapter 10: Binary Trees": {
+        "10.01 Test if a binary tree is height-balanced": {
             "C++: is_tree_balanced.cc": {
                 "passed": 3852,
                 "total": 3852
@@ -1014,7 +1014,7 @@ problem_mapping = {
                 "total": 3852
             }
         },
-        "9.01.01 Return the size of largest complete subtree": {
+        "10.01.01 Return the size of largest complete subtree": {
             "C++: size_of_largest_complete_subtree.cc": {
                 "passed": 5,
                 "total": 5
@@ -1028,7 +1028,7 @@ problem_mapping = {
                 "total": 5
             }
         },
-        "9.01.02 Return the size of largest k balanced subtree": {
+        "10.01.02 Return the size of largest k balanced subtree": {
             "C++: size_of_k_balanced_subtree.cc": {
                 "passed": 3,
                 "total": 3
@@ -1042,7 +1042,7 @@ problem_mapping = {
                 "total": 3
             }
         },
-        "9.02 Test if a binary tree is symmetric": {
+        "10.02 Test if a binary tree is symmetric": {
             "C++: is_tree_symmetric.cc": {
                 "passed": 3852,
                 "total": 3852
@@ -1056,7 +1056,7 @@ problem_mapping = {
                 "total": 3852
             }
         },
-        "9.03 Compute the lowest common ancestor in a binary tree": {
+        "10.03 Compute the lowest common ancestor in a binary tree": {
             "C++: lowest_common_ancestor.cc": {
                 "passed": 948,
                 "total": 948
@@ -1070,7 +1070,7 @@ problem_mapping = {
                 "total": 948
             }
         },
-        "9.04 Compute the LCA when nodes have parent pointers": {
+        "10.04 Compute the LCA when nodes have parent pointers": {
             "C++: lowest_common_ancestor_with_parent.cc": {
                 "passed": 948,
                 "total": 948
@@ -1084,9 +1084,9 @@ problem_mapping = {
                 "total": 948
             }
         },
-        "9.05 Sum the root-to-leaf paths in a binary tree": {
+        "10.05 Sum the root-to-leaf paths in a binary tree": {
             "C++: sum_root_to_leaf.cc": {
-                "passed": 0,
+                "passed": 3849,
                 "total": 3849
             },
             "Java: SumRootToLeaf.java": {
@@ -1098,9 +1098,9 @@ problem_mapping = {
                 "total": 3849
             }
         },
-        "9.06 Find a root to leaf path with specified sum": {
+        "10.06 Find a root to leaf path with specified sum": {
             "C++: path_sum.cc": {
-                "passed": 0,
+                "passed": 7690,
                 "total": 7690
             },
             "Java: PathSum.java": {
@@ -1112,9 +1112,23 @@ problem_mapping = {
                 "total": 7690
             }
         },
-        "9.07 Implement an inorder traversal without recursion": {
-            "C++: tree_inorder.cc": {
+        "10.06.01 Find all root to leaf paths with specified sum": {
+            "C++: paths_with_sum.cc": {
                 "passed": 0,
+                "total": 0
+            },
+            "Java: PathsWithSum.java": {
+                "passed": 0,
+                "total": 0
+            },
+            "Python: paths_with_sum.py": {
+                "passed": 0,
+                "total": 0
+            }
+        },
+        "10.07 Implement an inorder traversal without recursion": {
+            "C++: tree_inorder.cc": {
+                "passed": 3852,
                 "total": 3852
             },
             "Java: TreeInorder.java": {
@@ -1126,7 +1140,21 @@ problem_mapping = {
                 "total": 3852
             }
         },
-        "9.08 Compute the kth node in an inorder traversal": {
+        "10.08 Implement a preorder traversal without recursion": {
+            "C++: tree_preorder.cc": {
+                "passed": 3852,
+                "total": 3852
+            },
+            "Java: TreePreorder.java": {
+                "passed": 0,
+                "total": 3852
+            },
+            "Python: tree_preorder.py": {
+                "passed": 0,
+                "total": 3852
+            }
+        },
+        "10.09 Compute the kth node in an inorder traversal": {
             "C++: kth_node_in_tree.cc": {
                 "passed": 0,
                 "total": 3851

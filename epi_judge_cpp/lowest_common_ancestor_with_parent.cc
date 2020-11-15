@@ -4,28 +4,23 @@
 #include "test_framework/test_failure.h"
 #include "test_framework/timed_executor.h"
 
-int Height(const unique_ptr<BinaryTreeNode<int>>& node) {
+int Height(const BinaryTreeNode<int>* node) {
   int height = 0;
-  BinaryTreeNode<int>* temp = node.get();
-  while (temp->parent) {
-    temp = temp->parent;
-    height++;
+  while (node->parent) {
+    node = node->parent;
+    ++height;
   }
   return height;
 }
+
 BinaryTreeNode<int>* Lca(const unique_ptr<BinaryTreeNode<int>>& node0,
                          const unique_ptr<BinaryTreeNode<int>>& node1) {
-  int height0 = Height(node0);
-  int height1 = Height(node1);
-  BinaryTreeNode<int>* n0 = node0.get();
-  BinaryTreeNode<int>* n1 = node1.get();
-  while (n0 && height0 > height1) {
+  auto *n0 = node0.get(), *n1 = node1.get();
+  int height0 = Height(n0), height1 = Height(n1);
+  if (height1 > height0) std::swap(n0, n1);
+  int depth_diff = abs(height0 - height1);
+  while (n0 && depth_diff--) {
     n0 = n0->parent;
-    height0--;
-  }
-  while (n1 && height0 < height1) {
-    n1 = n1->parent;
-    height1--;
   }
   while (n0 && n1 && (n0 != n1)) {
     n0 = n0->parent;
