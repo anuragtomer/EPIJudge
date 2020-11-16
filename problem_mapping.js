@@ -1168,9 +1168,9 @@ problem_mapping = {
                 "total": 3851
             }
         },
-        "9.09 Compute the successor": {
+        "10.10 Compute the successor": {
             "C++: successor_in_tree.cc": {
-                "passed": 0,
+                "passed": 948,
                 "total": 948
             },
             "Java: SuccessorInTree.java": {
