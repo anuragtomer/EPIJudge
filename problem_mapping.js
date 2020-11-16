@@ -1182,9 +1182,9 @@ problem_mapping = {
                 "total": 948
             }
         },
-        "9.10 Implement an inorder traversal with constant space": {
+        "10.11 Implement an inorder traversal with constant space": {
             "C++: tree_with_parent_inorder.cc": {
-                "passed": 0,
+                "passed": 3852,
                 "total": 3852
             },
             "Java: TreeWithParentInorder.java": {
