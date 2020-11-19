@@ -1223,6 +1223,15 @@ max_trapped_water: $(BUILD_DIR)/max_trapped_water
 
 .PHONY: max_trapped_water
 
+# max_tree.cc
+
+$(BUILD_DIR)/max_tree: $(SRC_DIR)/max_tree.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+max_tree: $(BUILD_DIR)/max_tree
+	$< $(PROGRAM_ARGS)
+
+.PHONY: max_tree
+
 
 # max_water_trappable.cc
 
@@ -1412,6 +1421,16 @@ path_sum: $(BUILD_DIR)/path_sum
 	$< $(PROGRAM_ARGS)
 
 .PHONY: path_sum
+
+
+# paths_with_sum.cc
+
+$(BUILD_DIR)/paths_with_sum: $(SRC_DIR)/paths_with_sum.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+paths_with_sum: $(BUILD_DIR)/paths_with_sum
+	$< $(PROGRAM_ARGS)
+
+.PHONY: paths_with_sum
 
 
 # permutations.cc
@@ -2124,6 +2143,16 @@ tree_from_preorder_inorder: $(BUILD_DIR)/tree_from_preorder_inorder
 .PHONY: tree_from_preorder_inorder
 
 
+# tree_from_postorder_inorder.cc
+
+$(BUILD_DIR)/tree_from_postorder_inorder: $(SRC_DIR)/tree_from_postorder_inorder.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+tree_from_postorder_inorder: $(BUILD_DIR)/tree_from_postorder_inorder
+	$< $(PROGRAM_ARGS)
+
+.PHONY: tree_from_postorder_inorder
+
+
 # tree_from_preorder_with_null.cc
 
 $(BUILD_DIR)/tree_from_preorder_with_null: $(SRC_DIR)/tree_from_preorder_with_null.cc | $(BUILD_DIR)
@@ -2192,6 +2221,26 @@ tree_with_parent_inorder: $(BUILD_DIR)/tree_with_parent_inorder
 	$< $(PROGRAM_ARGS)
 
 .PHONY: tree_with_parent_inorder
+
+
+# tree_with_parent_preorder.cc
+
+$(BUILD_DIR)/tree_with_parent_preorder: $(SRC_DIR)/tree_with_parent_preorder.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+tree_with_parent_preorder: $(BUILD_DIR)/tree_with_parent_preorder
+	$< $(PROGRAM_ARGS)
+
+.PHONY: tree_with_parent_preorder
+
+
+# tree_with_parent_postorder.cc
+
+$(BUILD_DIR)/tree_with_parent_postorder: $(SRC_DIR)/tree_with_parent_postorder.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+tree_with_parent_postorder: $(BUILD_DIR)/tree_with_parent_postorder
+	$< $(PROGRAM_ARGS)
+
+.PHONY: tree_with_parent_postorder
 
 
 # two_sorted_arrays_merge.cc
@@ -2362,6 +2411,7 @@ all: \
     $(BUILD_DIR)/max_sum_subarray \
     $(BUILD_DIR)/max_teams_in_photograph \
     $(BUILD_DIR)/max_trapped_water \
+	$(BUILD_DIR)/max_tree \
     $(BUILD_DIR)/max_water_trappable \
     $(BUILD_DIR)/maximum_subarray_in_circular_array \
     $(BUILD_DIR)/minimum_distance_3_sorted_arrays \
@@ -2381,6 +2431,7 @@ all: \
     $(BUILD_DIR)/parity \
     $(BUILD_DIR)/pascal_triangle \
     $(BUILD_DIR)/path_sum \
+	$(BUILD_DIR)/paths_with_sum \
     $(BUILD_DIR)/permutations \
     $(BUILD_DIR)/phone_number_mnemonic \
     $(BUILD_DIR)/picking_up_coins \
@@ -2425,6 +2476,7 @@ all: \
     $(BUILD_DIR)/search_shifted_sorted_array \
     $(BUILD_DIR)/search_unknown_length_array \
 	$(BUILD_DIR)/size_of_largest_complete_subtree \
+	$(BUILD_DIR)/size_of_k_balanced_subtree \
     $(BUILD_DIR)/smallest_nonconstructible_value \
     $(BUILD_DIR)/smallest_subarray_covering_all_values \
     $(BUILD_DIR)/smallest_subarray_covering_set \
@@ -2453,6 +2505,7 @@ all: \
     $(BUILD_DIR)/tree_connect_leaves \
     $(BUILD_DIR)/tree_exterior \
     $(BUILD_DIR)/tree_from_preorder_inorder \
+	$(BUILD_DIR)/tree_from_postorder_inorder \
     $(BUILD_DIR)/tree_from_preorder_with_null \
     $(BUILD_DIR)/tree_inorder \
     $(BUILD_DIR)/tree_level_order \
@@ -2460,6 +2513,8 @@ all: \
     $(BUILD_DIR)/tree_preorder \
     $(BUILD_DIR)/tree_right_sibling \
     $(BUILD_DIR)/tree_with_parent_inorder \
+	$(BUILD_DIR)/tree_with_parent_preorder \
+	$(BUILD_DIR)/tree_with_parent_postorder \
     $(BUILD_DIR)/two_sorted_arrays_merge \
     $(BUILD_DIR)/two_sum \
     $(BUILD_DIR)/uniform_random_number \

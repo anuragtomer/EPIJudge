@@ -1196,9 +1196,37 @@ problem_mapping = {
                 "total": 3852
             }
         },
-        "9.11 Reconstruct a binary tree from traversal data": {
+		"10.11.01 Implement a preorder traversal with constant space": {
+			"C++: tree_with_parent_preorder.cc": {
+				"passed": 3852,
+				"total": 3852
+			},
+			"Java: TreeWithParentPreorder.java": {
+				"passed": 0,
+				"total": 3852
+			},
+			"Python: tree_with_parent_preorder.py": {
+				"passed": 0,
+				"total": 3852
+			}
+		},
+		"10.11.02 Implement a postorder traversal with constant space": {
+			"C++: tree_with_parent_postorder.cc": {
+				"passed": 3852,
+				"total": 3852
+			},
+			"Java: TreeWithParentPostorder.java": {
+				"passed": 0,
+				"total": 3852
+			},
+			"Python: tree_with_parent_postorder.py": {
+				"passed": 0,
+				"total": 3852
+			}
+		},
+		"10.12 Reconstruct a binary tree from preorder-inorder traversal data": {
             "C++: tree_from_preorder_inorder.cc": {
-                "passed": 0,
+				"passed": 3852,
                 "total": 3852
             },
             "Java: TreeFromPreorderInorder.java": {
@@ -1209,7 +1237,35 @@ problem_mapping = {
                 "passed": 0,
                 "total": 3852
             }
-        },
+		},
+		"10.12.01 Reconstruct a binary tree from postorder-inorder traversal data": {
+			"C++: tree_from_postorder_inorder.cc": {
+				"passed": 0,
+				"total": 3852
+			},
+			"Java: TreeFromPostorderInorder.java": {
+				"passed": 0,
+				"total": 3852
+			},
+			"Python: tree_from_postorder_inorder.py": {
+				"passed": 0,
+				"total": 3852
+			}
+		},
+		"10.12.02 Create a max-tree": {
+			"C++: max_tree.cc": {
+				"passed": 0,
+				"total": 3852
+			},
+			"Java: MaxTree.java": {
+				"passed": 0,
+				"total": 3852
+			},
+			"Python: max_tree.py": {
+				"passed": 0,
+				"total": 3852
+			}
+		},
         "9.12 Reconstruct a binary tree from a preorder traversal with markers": {
             "C++: tree_from_preorder_with_null.cc": {
                 "passed": 0,
