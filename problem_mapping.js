@@ -1254,16 +1254,16 @@ problem_mapping = {
         },
         "10.12.02 Create a max-tree": {
             "C++: max_tree.cc": {
-                "passed": 0,
-                "total": 3852
+				"passed": 3,
+				"total": 3
             },
             "Java: MaxTree.java": {
                 "passed": 0,
-                "total": 3852
+				"total": 3
             },
             "Python: max_tree.py": {
                 "passed": 0,
-                "total": 3852
+				"total": 3
             }
         },
         "9.12 Reconstruct a binary tree from a preorder traversal with markers": {
