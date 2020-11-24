@@ -2223,6 +2223,16 @@ tree_right_sibling: $(BUILD_DIR)/tree_right_sibling
 .PHONY: tree_right_sibling
 
 
+# tree_right_sibling_no_next.cc
+
+$(BUILD_DIR)/tree_right_sibling_no_next: $(SRC_DIR)/tree_right_sibling_no_next.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+tree_right_sibling_no_next: $(BUILD_DIR)/tree_right_sibling_no_next
+	$< $(PROGRAM_ARGS)
+
+.PHONY: tree_right_sibling_no_next
+
+
 # tree_with_parent_inorder.cc
 
 $(BUILD_DIR)/tree_with_parent_inorder: $(SRC_DIR)/tree_with_parent_inorder.cc | $(BUILD_DIR)

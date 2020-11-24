@@ -1,9 +1,11 @@
 #include <memory>
+#include <queue>
 #include <vector>
 
 #include "test_framework/generic_test.h"
 #include "test_framework/serialization_traits.h"
 #include "test_framework/timed_executor.h"
+using std::queue;
 using std::unique_ptr;
 using test_framework::BinaryTreeSerializationTrait;
 template <typename T>
@@ -16,7 +18,22 @@ struct BinaryTreeNode {
 };
 
 void ConstructRightSibling(BinaryTreeNode<int>* tree) {
-  // TODO - you fill in here.
+  queue<BinaryTreeNode<int>*> levelList, nextLevelList;
+  if (tree != nullptr) levelList.push(tree);
+  BinaryTreeNode<int>* prev = nullptr;
+  while (!levelList.empty()) {
+    auto current = levelList.front();
+    levelList.pop();
+    if (prev != nullptr) prev->next = current;
+    prev = current;
+    if (current->left != nullptr) nextLevelList.push(current->left.get());
+    if (current->right != nullptr) nextLevelList.push(current->right.get());
+    if (levelList.empty()) {
+      levelList = nextLevelList;
+      prev = nullptr;
+      nextLevelList = queue<BinaryTreeNode<int>*>();
+    }
+  }
   return;
 }
 namespace test_framework {

@@ -1308,10 +1308,10 @@ problem_mapping = {
                 "total": 3852
             }
         },
-		"10.15 Compute the exterior of a binary tree": {
+        "10.15 Compute the exterior of a binary tree": {
             "C++: tree_exterior.cc": {
-				"passed": 3853,
-                "total": 3852
+                "passed": 3853,
+                "total": 3853
             },
             "Java: TreeExterior.java": {
                 "passed": 0,
@@ -1322,9 +1322,9 @@ problem_mapping = {
                 "total": 3852
             }
         },
-        "9.15 Compute the right sibling tree": {
+		"10.16 Compute the right sibling tree": {
             "C++: tree_right_sibling.cc": {
-                "passed": 0,
+				"passed": 10,
                 "total": 10
             },
             "Java: TreeRightSibling.java": {
@@ -1335,7 +1335,21 @@ problem_mapping = {
                 "passed": 0,
                 "total": 10
             }
-        }
+		},
+		"10.16.01 Compute the right sibling tree with no next field": {
+			"C++: tree_right_sibling_no_next.cc": {
+				"passed": 0,
+				"total": 10
+			},
+			"Java: TreeRightSiblingNoNext.java": {
+				"passed": 0,
+				"total": 10
+			},
+			"Python: tree_right_sibling_no_next.py": {
+				"passed": 0,
+				"total": 10
+			}
+		}
     },
     "Chapter 10: Heaps": {
         "10.01 Merge sorted files": {
