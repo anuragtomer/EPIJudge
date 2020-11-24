@@ -1266,37 +1266,37 @@ problem_mapping = {
                 "total": 3
             }
         },
-		"10.13 Reconstruct a binary tree from a preorder traversal with markers": {
+        "10.13 Reconstruct a binary tree from a preorder traversal with markers": {
             "C++: tree_from_preorder_with_null.cc": {
-				"passed": 3852,
-				"total": 3852
-			},
-			"Java: TreeFromPreorderWithNull.java": {
-				"passed": 0,
-				"total": 3852
-			},
-			"Python: tree_from_preorder_with_null.py": {
+                "passed": 3852,
+                "total": 3852
+            },
+            "Java: TreeFromPreorderWithNull.java": {
                 "passed": 0,
                 "total": 3852
-			}
-		},
-		"10.13.01 Reconstruct a binary tree from a postorder traversal with markers": {
-			"C++: tree_from_postorder_with_null.cc": {
-				"passed": 0,
-				"total": 3852
-			},
-			"Java: TreeFromPreorderWithNull.java": {
-				"passed": 0,
-				"total": 3852
-			},
-			"Python: tree_from_preorder_with_null.py": {
-				"passed": 0,
-				"total": 3852
-			}
-		},
-		"10.14 Compute the leaves of a binary tree": {
+            },
+            "Python: tree_from_preorder_with_null.py": {
+                "passed": 0,
+                "total": 3852
+            }
+        },
+        "10.13.01 Reconstruct a binary tree from a postorder traversal with markers": {
+            "C++: tree_from_postorder_with_null.cc": {
+                "passed": 0,
+                "total": 3852
+            },
+            "Java: TreeFromPreorderWithNull.java": {
+                "passed": 0,
+                "total": 3852
+            },
+            "Python: tree_from_preorder_with_null.py": {
+                "passed": 0,
+                "total": 3852
+            }
+        },
+        "10.14 Compute the leaves of a binary tree": {
             "C++: tree_connect_leaves.cc": {
-				"passed": 3852,
+                "passed": 3852,
                 "total": 3852
             },
             "Java: TreeConnectLeaves.java": {
@@ -1308,9 +1308,9 @@ problem_mapping = {
                 "total": 3852
             }
         },
-        "9.14 Compute the exterior of a binary tree": {
+		"10.15 Compute the exterior of a binary tree": {
             "C++: tree_exterior.cc": {
-                "passed": 0,
+				"passed": 3853,
                 "total": 3852
             },
             "Java: TreeExterior.java": {
