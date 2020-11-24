@@ -2163,6 +2163,16 @@ tree_from_preorder_with_null: $(BUILD_DIR)/tree_from_preorder_with_null
 .PHONY: tree_from_preorder_with_null
 
 
+# tree_from_postorder_with_null.cc
+
+$(BUILD_DIR)/tree_from_postorder_with_null: $(SRC_DIR)/tree_from_postorder_with_null.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+tree_from_postorder_with_null: $(BUILD_DIR)/tree_from_postorder_with_null
+	$< $(PROGRAM_ARGS)
+
+.PHONY: tree_from_postorder_with_null
+
+
 # tree_inorder.cc
 
 $(BUILD_DIR)/tree_inorder: $(SRC_DIR)/tree_inorder.cc | $(BUILD_DIR)

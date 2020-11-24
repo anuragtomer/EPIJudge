@@ -7,11 +7,23 @@
 using std::string;
 using std::vector;
 
+unique_ptr<BinaryTreeNode<int>> ReconstructPreorderHelper(
+    const vector<int*>& preorder, int* subtree_index) {
+  int& current_index = *subtree_index;
+  int* current_value = preorder[current_index];
+  current_index++;
+  if (current_value == nullptr) return nullptr;
+  return std::make_unique<BinaryTreeNode<int>>(
+      *current_value, ReconstructPreorderHelper(preorder, subtree_index),
+      ReconstructPreorderHelper(preorder, subtree_index));
+}
+
 unique_ptr<BinaryTreeNode<int>> ReconstructPreorder(
     const vector<int*>& preorder) {
-  // TODO - you fill in here.
-  return nullptr;
+  int subtree_index = 0;
+  return ReconstructPreorderHelper(preorder, &subtree_index);
 }
+
 unique_ptr<BinaryTreeNode<int>> ReconstructPreorderWrapper(
     TimedExecutor& executor, const vector<string>& preorder) {
   vector<int> values;
