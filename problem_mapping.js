@@ -1349,9 +1349,23 @@ problem_mapping = {
 				"passed": 0,
 				"total": 10
 			}
+		},
+		"10.17 Create a binary tree class with locks": {
+			"C++: locked_binary_tree.cc": {
+				"passed": 0,
+				"total": 0
+			},
+			"Java: LockedBinaryTree.java": {
+				"passed": 0,
+				"total": 0
+			},
+			"Python: locked_binary_tree.py": {
+				"passed": 0,
+				"total": 0
+			}
 		}
     },
-    "Chapter 10: Heaps": {
+	"Chapter 10: Heaps": {
         "10.01 Merge sorted files": {
             "C++: sorted_arrays_merge.cc": {
                 "passed": 0,
