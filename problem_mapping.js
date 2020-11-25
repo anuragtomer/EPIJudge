@@ -1322,9 +1322,9 @@ problem_mapping = {
                 "total": 3852
             }
         },
-		"10.16 Compute the right sibling tree": {
+        "10.16 Compute the right sibling tree": {
             "C++: tree_right_sibling.cc": {
-				"passed": 10,
+                "passed": 10,
                 "total": 10
             },
             "Java: TreeRightSibling.java": {
@@ -1335,37 +1335,51 @@ problem_mapping = {
                 "passed": 0,
                 "total": 10
             }
-		},
-		"10.16.01 Compute the right sibling tree with no next field": {
-			"C++: tree_right_sibling_no_next.cc": {
-				"passed": 0,
-				"total": 10
-			},
-			"Java: TreeRightSiblingNoNext.java": {
-				"passed": 0,
-				"total": 10
-			},
-			"Python: tree_right_sibling_no_next.py": {
-				"passed": 0,
-				"total": 10
-			}
-		},
-		"10.17 Create a binary tree class with locks": {
-			"C++: locked_binary_tree.cc": {
-				"passed": 0,
-				"total": 0
-			},
-			"Java: LockedBinaryTree.java": {
-				"passed": 0,
-				"total": 0
-			},
-			"Python: locked_binary_tree.py": {
-				"passed": 0,
-				"total": 0
-			}
-		}
+        },
+        "10.16.01 Compute the right sibling tree with no next field": {
+            "C++: tree_right_sibling_no_next.cc": {
+                "passed": 0,
+                "total": 10
+            },
+            "Java: TreeRightSiblingNoNext.java": {
+                "passed": 0,
+                "total": 10
+            },
+            "Python: tree_right_sibling_no_next.py": {
+                "passed": 0,
+                "total": 10
+            }
+        },
+        "10.17 Create a binary tree class with locks": {
+            "C++: locked_binary_tree.cc": {
+                "passed": 0,
+                "total": 0
+            },
+            "Java: LockedBinaryTree.java": {
+                "passed": 0,
+                "total": 0
+            },
+            "Python: locked_binary_tree.py": {
+                "passed": 0,
+                "total": 0
+            }
+        }
     },
-	"Chapter 10: Heaps": {
+	"Chapter 11: Heaps": {
+		"11.00 Find longest K strings": {
+			"C++: top_k.cc": {
+				"passed": 2,
+				"total": 2
+			},
+			"Java: TopK.java": {
+				"passed": 0,
+				"total": 2
+			},
+			"Python: top_k.py": {
+				"passed": 0,
+				"total": 2
+			}
+		},
         "10.01 Merge sorted files": {
             "C++: sorted_arrays_merge.cc": {
                 "passed": 0,

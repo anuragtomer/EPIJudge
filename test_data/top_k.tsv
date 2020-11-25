@@ -1,0 +1,3 @@
+int	array(string)	array(string)
+2	["hello", "there?", "is", "this", "a", "good", "example"]	["example", "there?"]	TODO
+3	["hello", "there?", "is", "this", "a", "good", "example"]	["example", "there?", "hello"]	TODO

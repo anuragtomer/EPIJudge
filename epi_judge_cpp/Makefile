@@ -2113,6 +2113,16 @@ three_sum: $(BUILD_DIR)/three_sum
 .PHONY: three_sum
 
 
+# top_k.cc
+
+$(BUILD_DIR)/top_k: $(SRC_DIR)/top_k.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+top_k: $(BUILD_DIR)/top_k
+	$< $(PROGRAM_ARGS)
+
+.PHONY: top_k
+
+
 # tree_connect_leaves.cc
 
 $(BUILD_DIR)/tree_connect_leaves: $(SRC_DIR)/tree_connect_leaves.cc | $(BUILD_DIR)
@@ -2522,6 +2532,7 @@ all: \
     $(BUILD_DIR)/swap_bits \
     $(BUILD_DIR)/task_pairing \
     $(BUILD_DIR)/three_sum \
+	$(BUILD_DIR)/top_k \
     $(BUILD_DIR)/tree_connect_leaves \
     $(BUILD_DIR)/tree_exterior \
     $(BUILD_DIR)/tree_from_preorder_inorder \
