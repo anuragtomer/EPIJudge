@@ -1365,24 +1365,24 @@ problem_mapping = {
             }
         }
     },
-	"Chapter 11: Heaps": {
-		"11.00 Find longest K strings": {
-			"C++: top_k.cc": {
-				"passed": 2,
-				"total": 2
-			},
-			"Java: TopK.java": {
-				"passed": 0,
-				"total": 2
-			},
-			"Python: top_k.py": {
-				"passed": 0,
-				"total": 2
-			}
-		},
-        "10.01 Merge sorted files": {
-            "C++: sorted_arrays_merge.cc": {
+    "Chapter 11: Heaps": {
+        "11.00 Find longest K strings": {
+            "C++: top_k.cc": {
+                "passed": 2,
+                "total": 2
+            },
+            "Java: TopK.java": {
                 "passed": 0,
+                "total": 2
+            },
+            "Python: top_k.py": {
+                "passed": 0,
+                "total": 2
+            }
+        },
+        "11.01 Merge sorted files": {
+            "C++: sorted_arrays_merge.cc": {
+                "passed": 152,
                 "total": 152
             },
             "Java: SortedArraysMerge.java": {
@@ -1394,7 +1394,7 @@ problem_mapping = {
                 "total": 152
             }
         },
-        "10.02 Sort an increasing-decreasing array": {
+        "11.02 Sort an increasing-decreasing array": {
             "C++: sort_increasing_decreasing_array.cc": {
                 "passed": 0,
                 "total": 203
@@ -1408,7 +1408,7 @@ problem_mapping = {
                 "total": 203
             }
         },
-        "10.03 Sort an almost-sorted array": {
+        "11.03 Sort an almost-sorted array": {
             "C++: sort_almost_sorted_array.cc": {
                 "passed": 0,
                 "total": 101
@@ -1422,7 +1422,7 @@ problem_mapping = {
                 "total": 101
             }
         },
-        "10.04 Compute the k closest stars": {
+        "11.04 Compute the k closest stars": {
             "C++: k_closest_stars.cc": {
                 "passed": 0,
                 "total": 51
@@ -1436,7 +1436,7 @@ problem_mapping = {
                 "total": 51
             }
         },
-        "10.05 Compute the median of online data": {
+        "11.05 Compute the median of online data": {
             "C++: online_median.cc": {
                 "passed": 0,
                 "total": 55
@@ -1450,7 +1450,7 @@ problem_mapping = {
                 "total": 55
             }
         },
-        "10.06 Compute the k largest elements in a max-heap": {
+        "11.06 Compute the k largest elements in a max-heap": {
             "C++: k_largest_in_heap.cc": {
                 "passed": 0,
                 "total": 102

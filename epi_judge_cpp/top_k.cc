@@ -8,6 +8,10 @@ vector<string> TopK(int k, const vector<string>& input_stream) {
   };
   priority_queue<string, vector<string>, decltype(cmp)> min_heap(cmp);
   for (auto next_string : input_stream) {
+    if (min_heap.size() == k) {
+      string tp = min_heap.top();
+      if (next_string.size() < tp.size()) continue;
+    }
     min_heap.emplace(next_string);
     if (min_heap.size() > k) min_heap.pop();
   }
