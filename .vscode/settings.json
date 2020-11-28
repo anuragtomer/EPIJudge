@@ -1,9 +1,18 @@
 {
     "files.associations": {
-        "functional": "cpp",
-        "iosfwd": "cpp"
-    },
+		"functional": "cpp",
+		"iosfwd": "cpp",
+		"memory": "cpp",
+		"__config": "cpp",
+		"__nullptr": "cpp",
+		"vector": "cpp",
+		"string": "cpp",
+		"queue": "cpp"
+	},
     "editor.insertSpaces": false,
 	"editor.detectIndentation": false,
-	"python.pythonPath": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/bin/python3.8"
+	"python.pythonPath": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/bin/python3.8",
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"html.format.enable": false
 }

@@ -5,8 +5,8 @@
 #include "test_framework/generic_test.h"
 #include "test_framework/serialization_traits.h"
 #include "test_framework/test_utils.h"
+using std::priority_queue;
 using std::vector;
-
 struct Star {
   bool operator<(const Star& that) const {
     return Distance() < that.Distance();
@@ -20,8 +20,20 @@ struct Star {
 vector<Star> FindClosestKStars(vector<Star>::const_iterator stars_begin,
                                const vector<Star>::const_iterator& stars_end,
                                int k) {
-  // TODO - you fill in here.
-  return {};
+  priority_queue<Star, vector<Star>, std::less<>> max_heap;
+  while (stars_begin != stars_end) {
+    max_heap.emplace(*stars_begin);
+    if (max_heap.size() == k + 1) {
+      max_heap.pop();
+    }
+    stars_begin = next(stars_begin);
+  }
+  vector<Star> result;
+  while (!max_heap.empty()) {
+    result.emplace_back(max_heap.top());
+    max_heap.pop();
+  }
+  return result;
 }
 
 namespace test_framework {
