@@ -884,6 +884,16 @@ knapsack: $(BUILD_DIR)/knapsack
 .PHONY: knapsack
 
 
+# kth_largest_element.cc
+
+$(BUILD_DIR)/kth_largest_element: $(SRC_DIR)/kth_largest_element.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+kth_largest_element: $(BUILD_DIR)/kth_largest_element
+	$< $(PROGRAM_ARGS)
+
+.PHONY: kth_largest_element
+
+
 # kth_largest_element_in_long_array.cc
 
 $(BUILD_DIR)/kth_largest_element_in_long_array: $(SRC_DIR)/kth_largest_element_in_long_array.cc | $(BUILD_DIR)
@@ -2407,6 +2417,7 @@ all: \
     $(BUILD_DIR)/k_largest_in_heap \
     $(BUILD_DIR)/k_largest_values_in_bst \
     $(BUILD_DIR)/knapsack \
+    $(BUILD_DIR)/kth_largest_element \
     $(BUILD_DIR)/kth_largest_element_in_long_array \
     $(BUILD_DIR)/kth_largest_element_in_two_sorted_arrays \
     $(BUILD_DIR)/kth_largest_in_array \

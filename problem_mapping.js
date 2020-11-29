@@ -1396,7 +1396,7 @@ problem_mapping = {
         },
         "11.02 Sort an increasing-decreasing array": {
             "C++: sort_increasing_decreasing_array.cc": {
-				"passed": 203,
+                "passed": 203,
                 "total": 203
             },
             "Java: SortIncreasingDecreasingArray.java": {
@@ -1410,7 +1410,7 @@ problem_mapping = {
         },
         "11.03 Sort an almost-sorted array": {
             "C++: sort_almost_sorted_array.cc": {
-				"passed": 101,
+                "passed": 101,
                 "total": 101
             },
             "Java: SortAlmostSortedArray.java": {
@@ -1424,32 +1424,32 @@ problem_mapping = {
         },
         "11.04 Compute the k closest stars": {
             "C++: k_closest_stars.cc": {
-				"passed": 51,
-				"total": 51
-			},
-			"Java: KClosestStars.java": {
-				"passed": 0,
-				"total": 51
-			},
-			"Python: k_closest_stars.py": {
+                "passed": 51,
+                "total": 51
+            },
+            "Java: KClosestStars.java": {
                 "passed": 0,
                 "total": 51
-			}
-		},
-		"11.04.01 Compute the kth largest element": {
-			"C++: kth_largest_element.cc": {
-				"passed": 0,
-				"total": 2
-			},
-			"Java: KthLargestElement.java": {
-				"passed": 0,
-				"total": 2
-			},
-			"Python: kth_largest_element.py": {
-				"passed": 0,
-				"total": 2
-			}
-		},
+            },
+            "Python: k_closest_stars.py": {
+                "passed": 0,
+                "total": 51
+            }
+        },
+        "11.04.01 Compute the kth largest element": {
+            "C++: kth_largest_element.cc": {
+                "passed": 3,
+                "total": 3
+            },
+            "Java: KthLargestElement.java": {
+                "passed": 0,
+                "total": 3
+            },
+            "Python: kth_largest_element.py": {
+                "passed": 0,
+                "total": 3
+            }
+        },
         "11.05 Compute the median of online data": {
             "C++: online_median.cc": {
                 "passed": 0,
