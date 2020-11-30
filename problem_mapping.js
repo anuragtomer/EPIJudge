@@ -1466,7 +1466,7 @@ problem_mapping = {
         },
         "11.06 Compute the k largest elements in a max-heap": {
             "C++: k_largest_in_heap.cc": {
-                "passed": 0,
+                "passed": 102,
                 "total": 102
             },
             "Java: KLargestInHeap.java": {
