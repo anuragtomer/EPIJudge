@@ -1477,6 +1477,34 @@ problem_mapping = {
                 "passed": 0,
                 "total": 102
             }
+		},
+		"11.07 Create Stack using Heap": {
+			"C++: stack_using_heap.cc": {
+				"passed": 4,
+				"total": 4
+			},
+			"Java: StackUsingHeap.java": {
+				"passed": 0,
+				"total": 4
+			},
+			"Python: stack_using_heap.py": {
+				"passed": 0,
+				"total": 4
+			}
+		},
+		"11.07.01 Create Queue using heap": {
+			"C++: queue_using_heap.cc": {
+				"passed": 2,
+				"total": 2
+			},
+			"Java: QueueUsingHeap.java": {
+				"passed": 0,
+				"total": 2
+			},
+			"Python: queue_using_heap.py": {
+				"passed": 0,
+				"total": 2
+			}
         }
     },
     "Chapter 11: Searching": {

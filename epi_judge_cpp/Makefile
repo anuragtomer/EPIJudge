@@ -1553,6 +1553,16 @@ queue_from_stacks: $(BUILD_DIR)/queue_from_stacks
 .PHONY: queue_from_stacks
 
 
+# queue_using_heap.cc
+
+$(BUILD_DIR)/queue_using_heap: $(SRC_DIR)/queue_using_heap.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+queue_using_heap: $(BUILD_DIR)/queue_using_heap
+	$< $(PROGRAM_ARGS)
+
+.PHONY: queue_using_heap
+
+
 # queue_with_max.cc
 
 $(BUILD_DIR)/queue_with_max: $(SRC_DIR)/queue_with_max.cc | $(BUILD_DIR)
@@ -2011,6 +2021,16 @@ stack_with_max: $(BUILD_DIR)/stack_with_max
 	$< $(PROGRAM_ARGS)
 
 .PHONY: stack_with_max
+
+
+# stack_using_heap.cc
+
+$(BUILD_DIR)/stack_using_heap: $(SRC_DIR)/stack_using_heap.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+stack_using_heap: $(BUILD_DIR)/stack_using_heap
+	$< $(PROGRAM_ARGS)
+
+.PHONY: stack_using_heap
 
 
 # string_decompositions_into_dictionary_words.cc
@@ -2484,6 +2504,7 @@ all: \
     $(BUILD_DIR)/primitive_divide \
     $(BUILD_DIR)/primitive_multiply \
     $(BUILD_DIR)/queue_from_stacks \
+	$(BUILD_DIR)/queue_using_heap \
     $(BUILD_DIR)/queue_with_max \
     $(BUILD_DIR)/random_permutation \
     $(BUILD_DIR)/random_subset \
@@ -2532,6 +2553,7 @@ all: \
     $(BUILD_DIR)/spiral_ordering \
     $(BUILD_DIR)/spreadsheet_encoding \
     $(BUILD_DIR)/stack_with_max \
+	$(BUILD_DIR)/stack_using_heap \
     $(BUILD_DIR)/string_decompositions_into_dictionary_words \
     $(BUILD_DIR)/string_integer_interconversion \
     $(BUILD_DIR)/string_transformability \
