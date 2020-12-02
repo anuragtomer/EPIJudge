@@ -496,6 +496,16 @@ find_salary_threshold: $(BUILD_DIR)/find_salary_threshold
 .PHONY: find_salary_threshold
 
 
+# first_key_greater.cc
+
+$(BUILD_DIR)/first_key_greater: $(SRC_DIR)/first_key_greater.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+first_key_greater: $(BUILD_DIR)/first_key_greater
+	$< $(PROGRAM_ARGS)
+
+.PHONY: first_key_greater
+
+
 # first_missing_positive_entry.cc
 
 $(BUILD_DIR)/first_missing_positive_entry: $(SRC_DIR)/first_missing_positive_entry.cc | $(BUILD_DIR)
@@ -2400,6 +2410,7 @@ all: \
     $(BUILD_DIR)/even_odd_list_merge \
     $(BUILD_DIR)/fibonacci \
     $(BUILD_DIR)/find_salary_threshold \
+	$(BUILD_DIR)/first_key_greater \
     $(BUILD_DIR)/first_missing_positive_entry \
     $(BUILD_DIR)/gcd \
     $(BUILD_DIR)/graph_clone \
