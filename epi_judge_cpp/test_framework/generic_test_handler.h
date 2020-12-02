@@ -39,7 +39,8 @@ class GenericTestHandler {
  private:
   static constexpr bool has_default_comparator =
       std::is_same<Comparator, DefaultComparator>::value ||
-      std::is_same<Comparator, UnorderedComparator>::value;
+      std::is_same<Comparator, UnorderedComparator>::value ||
+      std::is_same<Comparator, InComparator>::value;
 
   using func_traits = FunctionalTrait<Function>;
 

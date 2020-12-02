@@ -155,6 +155,16 @@ struct UnorderedComparator {
 };
 
 /**
+ * Compares whether element is part of vector. Vector must be sorted.
+ */
+struct InComparator {
+  template <typename T>
+  bool operator()(const T& a, const T& b) const {
+    return binary_search(a.begin(), a.end(), b[0]);
+  }
+};
+
+/**
  * This function asserts that the tested function signature matches
  * the one in the test data header. Test function argument types and
  * return type are passed as template arguments.
@@ -213,4 +223,5 @@ decltype(auto) ParseSerializedArgs(
 }  // namespace test_framework
 
 using test_framework::DefaultComparator;
+using test_framework::InComparator;
 using test_framework::UnorderedComparator;

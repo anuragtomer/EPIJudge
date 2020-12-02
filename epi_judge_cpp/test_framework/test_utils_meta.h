@@ -106,6 +106,7 @@ constexpr int FirstFalseArg(bool b, Bools... tail) {
 
 struct DefaultComparator;
 struct UnorderedComparator;
+struct InComparator;
 
 class OnScopeExit {
  public:
@@ -208,6 +209,12 @@ struct BiPredicateTrait<DefaultComparator> {
 
 template <>
 struct BiPredicateTrait<UnorderedComparator> {
+  using arg1_t = void;
+  using arg2_t = void;
+};
+
+template <>
+struct BiPredicateTrait<InComparator> {
   using arg1_t = void;
   using arg2_t = void;
 };
