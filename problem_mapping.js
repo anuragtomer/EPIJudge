@@ -1556,7 +1556,7 @@ problem_mapping = {
         },
         "12.01.03 Range of k in sorted array": {
             "C++: range_of_k.cc": {
-                "passed": 0,
+                "passed": 3,
                 "total": 3
             },
             "Java: RangeOfK.java": {
