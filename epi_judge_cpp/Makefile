@@ -496,6 +496,16 @@ find_salary_threshold: $(BUILD_DIR)/find_salary_threshold
 .PHONY: find_salary_threshold
 
 
+# find_local_minima.cc
+
+$(BUILD_DIR)/find_local_minima: $(SRC_DIR)/find_local_minima.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+find_local_minima: $(BUILD_DIR)/find_local_minima
+	$< $(PROGRAM_ARGS)
+
+.PHONY: find_local_minima
+
+
 # first_key_greater.cc
 
 $(BUILD_DIR)/first_key_greater: $(SRC_DIR)/first_key_greater.cc | $(BUILD_DIR)
@@ -1523,6 +1533,16 @@ pretty_printing: $(BUILD_DIR)/pretty_printing
 .PHONY: pretty_printing
 
 
+# prefix_of_strings.cc
+
+$(BUILD_DIR)/prefix_of_strings: $(SRC_DIR)/prefix_of_strings.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+prefix_of_strings: $(BUILD_DIR)/prefix_of_strings
+	$< $(PROGRAM_ARGS)
+
+.PHONY: prefix_of_strings
+
+
 # prime_sieve.cc
 
 $(BUILD_DIR)/prime_sieve: $(SRC_DIR)/prime_sieve.cc | $(BUILD_DIR)
@@ -1611,6 +1631,16 @@ range_lookup_in_bst: $(BUILD_DIR)/range_lookup_in_bst
 	$< $(PROGRAM_ARGS)
 
 .PHONY: range_lookup_in_bst
+
+
+# range_of_k.cc
+
+$(BUILD_DIR)/range_of_k: $(SRC_DIR)/range_of_k.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+range_of_k: $(BUILD_DIR)/range_of_k
+	$< $(PROGRAM_ARGS)
+
+.PHONY: range_of_k
 
 
 # real_square_root.cc
@@ -2409,6 +2439,7 @@ all: \
     $(BUILD_DIR)/even_odd_array \
     $(BUILD_DIR)/even_odd_list_merge \
     $(BUILD_DIR)/fibonacci \
+	$(BUILD_DIR)/find_local_minima \
     $(BUILD_DIR)/find_salary_threshold \
 	$(BUILD_DIR)/first_key_greater \
     $(BUILD_DIR)/first_missing_positive_entry \
@@ -2510,6 +2541,7 @@ all: \
     $(BUILD_DIR)/pivot_list \
     $(BUILD_DIR)/power_set \
     $(BUILD_DIR)/power_x_y \
+	$(BUILD_DIR)/prefix_of_strings \
     $(BUILD_DIR)/pretty_printing \
     $(BUILD_DIR)/prime_sieve \
     $(BUILD_DIR)/primitive_divide \
@@ -2519,6 +2551,7 @@ all: \
     $(BUILD_DIR)/queue_with_max \
     $(BUILD_DIR)/random_permutation \
     $(BUILD_DIR)/random_subset \
+	$(BUILD_DIR)/range_of_k \
     $(BUILD_DIR)/range_lookup_in_bst \
     $(BUILD_DIR)/real_square_root \
     $(BUILD_DIR)/rectangle_intersection \
