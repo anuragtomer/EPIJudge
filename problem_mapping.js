@@ -1570,16 +1570,16 @@ problem_mapping = {
         },
         "12.01.04 Prefix in array of strings": {
             "C++: prefix_of_strings.cc": {
-                "passed": 0,
-                "total": 3
+				"passed": 1,
+				"total": 1
             },
             "Java: PrefixOfStrings.java": {
                 "passed": 0,
-                "total": 3
+				"total": 1
             },
             "Python: prefix_of_strings.py": {
                 "passed": 0,
-                "total": 3
+				"total": 1
             }
         },
         "12.02 Search a sorted array for entry equal to its index": {
