@@ -4,17 +4,16 @@
 #include "test_framework/test_failure.h"
 #include "test_framework/timed_executor.h"
 using std::vector;
-
-int SearchEntryEqualToItsIndex(const vector<int>& A) {
+int SearchEntryEqualToItsIndexRepeated(const vector<int>& A) {
   int lb = 0, ub = A.size() - 1;
   while (lb <= ub) {
     int mid = lb + (ub - lb) / 2;
     if (A[mid] == mid) {
       return mid;
     } else if (A[mid] < mid) {
-      lb = mid + 1;
-    } else {
       ub = mid - 1;
+    } else {
+      lb = mid + 1;
     }
   }
   return -1;
@@ -22,7 +21,8 @@ int SearchEntryEqualToItsIndex(const vector<int>& A) {
 
 void SearchEntryEqualToItsIndexWrapper(TimedExecutor& executor,
                                        const vector<int>& A) {
-  int result = executor.Run([&] { return SearchEntryEqualToItsIndex(A); });
+  int result =
+      executor.Run([&] { return SearchEntryEqualToItsIndexRepeated(A); });
 
   if (result != -1) {
     if (A[result] != result) {
@@ -40,7 +40,8 @@ void SearchEntryEqualToItsIndexWrapper(TimedExecutor& executor,
 int main(int argc, char* argv[]) {
   std::vector<std::string> args{argv + 1, argv + argc};
   std::vector<std::string> param_names{"executor", "A"};
-  return GenericTestMain(
-      args, "search_entry_equal_to_index.cc", "search_entry_equal_to_index.tsv",
-      &SearchEntryEqualToItsIndexWrapper, DefaultComparator{}, param_names);
+  return GenericTestMain(args, "search_entry_equal_to_index_repeated.cc",
+                         "search_entry_equal_to_index_repeated.tsv",
+                         &SearchEntryEqualToItsIndexWrapper,
+                         DefaultComparator{}, param_names);
 }

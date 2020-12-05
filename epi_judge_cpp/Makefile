@@ -1813,6 +1813,16 @@ search_entry_equal_to_index: $(BUILD_DIR)/search_entry_equal_to_index
 .PHONY: search_entry_equal_to_index
 
 
+# search_entry_equal_to_index_repeated.cc
+
+$(BUILD_DIR)/search_entry_equal_to_index_repeated: $(SRC_DIR)/search_entry_equal_to_index_repeated.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+search_entry_equal_to_index_repeated: $(BUILD_DIR)/search_entry_equal_to_index_repeated
+	$< $(PROGRAM_ARGS)
+
+.PHONY: search_entry_equal_to_index_repeated
+
+
 # search_first_greater_value_in_bst.cc
 
 $(BUILD_DIR)/search_first_greater_value_in_bst: $(SRC_DIR)/search_first_greater_value_in_bst.cc | $(BUILD_DIR)
@@ -2570,6 +2580,7 @@ all: \
     $(BUILD_DIR)/rotate_array \
     $(BUILD_DIR)/run_length_compression \
     $(BUILD_DIR)/search_entry_equal_to_index \
+	$(BUILD_DIR)/search_entry_equal_to_index_repeated \
     $(BUILD_DIR)/search_first_greater_value_in_bst \
     $(BUILD_DIR)/search_first_key \
     $(BUILD_DIR)/search_for_min_max_in_array \

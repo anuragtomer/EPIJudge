@@ -1570,21 +1570,21 @@ problem_mapping = {
         },
         "12.01.04 Prefix in array of strings": {
             "C++: prefix_of_strings.cc": {
-				"passed": 1,
-				"total": 1
+                "passed": 1,
+                "total": 1
             },
             "Java: PrefixOfStrings.java": {
                 "passed": 0,
-				"total": 1
+                "total": 1
             },
             "Python: prefix_of_strings.py": {
                 "passed": 0,
-				"total": 1
+                "total": 1
             }
         },
         "12.02 Search a sorted array for entry equal to its index": {
             "C++: search_entry_equal_to_index.cc": {
-                "passed": 0,
+                "passed": 501,
                 "total": 501
             },
             "Java: SearchEntryEqualToIndex.java": {
@@ -1596,6 +1596,20 @@ problem_mapping = {
                 "total": 501
             }
         },
+		"12.02.01 Search a sorted array for entry equal to its index with repeated entries": {
+			"C++: search_entry_equal_to_index_repeated.cc": {
+				"passed": 2,
+				"total": 2
+			},
+			"Java: SearchEntryEqualToIndexRepeated.java": {
+				"passed": 0,
+				"total": 2
+			},
+			"Python: search_entry_equal_to_index_repeated.py": {
+				"passed": 0,
+				"total": 2
+			}
+		},
         "12.03 Search a cyclically sorted array": {
             "C++: search_shifted_sorted_array.cc": {
                 "passed": 0,
