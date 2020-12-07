@@ -1596,23 +1596,23 @@ problem_mapping = {
                 "total": 501
             }
         },
-		"12.02.01 Search a sorted array for entry equal to its index with repeated entries": {
-			"C++: search_entry_equal_to_index_repeated.cc": {
-				"passed": 2,
-				"total": 2
-			},
-			"Java: SearchEntryEqualToIndexRepeated.java": {
-				"passed": 0,
-				"total": 2
-			},
-			"Python: search_entry_equal_to_index_repeated.py": {
-				"passed": 0,
-				"total": 2
-			}
-		},
+        "12.02.01 Search a sorted array for entry equal to its index with repeated entries": {
+            "C++: search_entry_equal_to_index_repeated.cc": {
+                "passed": 2,
+                "total": 2
+            },
+            "Java: SearchEntryEqualToIndexRepeated.java": {
+                "passed": 0,
+                "total": 2
+            },
+            "Python: search_entry_equal_to_index_repeated.py": {
+                "passed": 0,
+                "total": 2
+            }
+        },
         "12.03 Search a cyclically sorted array": {
             "C++: search_shifted_sorted_array.cc": {
-                "passed": 0,
+				"passed": 307,
                 "total": 307
             },
             "Java: SearchShiftedSortedArray.java": {
@@ -1624,6 +1624,34 @@ problem_mapping = {
                 "total": 307
             }
         },
+		"12.03.01 Search max in increasing-decreasing array": {
+			"C++: search_max_increasing_decreasing.cc": {
+				"passed": 5,
+				"total": 5
+			},
+			"Java: SearchMaxIncreasingDecreasing.java": {
+				"passed": 0,
+				"total": 5
+			},
+			"Python: search_max_increasing_decreasing.py": {
+				"passed": 0,
+				"total": 5
+			}
+		},
+		"12.03.02 Search k in cyclical-rotated array": {
+			"C++: search_k_in_rotated.cc": {
+				"passed": 0,
+				"total": 16
+			},
+			"Java: SearchKInRotated.java": {
+				"passed": 0,
+				"total": 16
+			},
+			"Python: search_k_in_rotated.py": {
+				"passed": 0,
+				"total": 16
+			}
+		},
         "12.04 Compute the integer square root": {
             "C++: int_square_root.cc": {
                 "passed": 0,

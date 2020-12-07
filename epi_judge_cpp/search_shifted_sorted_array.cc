@@ -4,8 +4,18 @@
 using std::vector;
 
 int SearchSmallest(const vector<int>& A) {
-  // TODO - you fill in here.
-  return 0;
+  int lb = 0, ub = A.size() - 1;
+  if (A[lb] <= A[ub]) return lb;
+
+  while (lb < ub) {
+    int mid = lb + (ub - lb) / 2;
+    if (A[mid] > A[ub]) {  // it should be greater that both left and right.
+      lb = mid + 1;
+    } else {  // It should be less than both right and left.
+      ub = mid;
+    }
+  }
+  return lb;
 }
 
 int main(int argc, char* argv[]) {

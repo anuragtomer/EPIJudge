@@ -1903,6 +1903,26 @@ search_maze: $(BUILD_DIR)/search_maze
 .PHONY: search_maze
 
 
+# search_k_in_rotated.cc
+
+$(BUILD_DIR)/search_k_in_rotated: $(SRC_DIR)/search_k_in_rotated.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+search_k_in_rotated: $(BUILD_DIR)/search_k_in_rotated
+	$< $(PROGRAM_ARGS)
+
+.PHONY: search_k_in_rotated
+
+
+# search_max_increasing_decreasing.cc
+
+$(BUILD_DIR)/search_max_increasing_decreasing: $(SRC_DIR)/search_max_increasing_decreasing.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+search_max_increasing_decreasing: $(BUILD_DIR)/search_max_increasing_decreasing
+	$< $(PROGRAM_ARGS)
+
+.PHONY: search_max_increasing_decreasing
+
+
 # search_row_col_sorted_matrix.cc
 
 $(BUILD_DIR)/search_row_col_sorted_matrix: $(SRC_DIR)/search_row_col_sorted_matrix.cc | $(BUILD_DIR)
@@ -2588,6 +2608,8 @@ all: \
     $(BUILD_DIR)/search_frequent_items \
     $(BUILD_DIR)/search_in_bst \
     $(BUILD_DIR)/search_in_list \
+	$(BUILD_DIR)/search_k_in_rotated \
+	$(BUILD_DIR)/search_max_increasing_decreasing \
     $(BUILD_DIR)/search_maze \
     $(BUILD_DIR)/search_row_col_sorted_matrix \
     $(BUILD_DIR)/search_shifted_sorted_array \
