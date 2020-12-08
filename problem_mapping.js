@@ -1668,7 +1668,7 @@ problem_mapping = {
         },
         "12.05 Compute the real square root": {
             "C++: real_square_root.cc": {
-                "passed": 0,
+                "passed": 11003,
                 "total": 11003
             },
             "Java: RealSquareRoot.java": {
