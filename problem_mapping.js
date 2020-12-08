@@ -1654,7 +1654,7 @@ problem_mapping = {
         },
         "12.04 Compute the integer square root": {
             "C++: int_square_root.cc": {
-                "passed": 0,
+                "passed": 2000,
                 "total": 2000
             },
             "Java: IntSquareRoot.java": {

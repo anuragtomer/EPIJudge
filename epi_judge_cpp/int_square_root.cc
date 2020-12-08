@@ -1,8 +1,16 @@
 #include "test_framework/generic_test.h"
 
 int SquareRoot(int k) {
-  // TODO - you fill in here.
-  return 0;
+  int lb = 1, ub = k;
+  while (lb <= ub) {
+    int mid = lb + (ub - lb) / 2;
+    if (mid == k / mid) return mid;
+    if (mid < k / mid)
+      lb = mid + 1;
+    else
+      ub = mid - 1;
+  }
+  return lb - 1;
 }
 
 int main(int argc, char* argv[]) {
