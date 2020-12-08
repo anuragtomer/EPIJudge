@@ -1653,6 +1653,16 @@ real_square_root: $(BUILD_DIR)/real_square_root
 .PHONY: real_square_root
 
 
+# real_division.cc
+
+$(BUILD_DIR)/real_division: $(SRC_DIR)/real_division.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+real_division: $(BUILD_DIR)/real_division
+	$< $(PROGRAM_ARGS)
+
+.PHONY: real_division
+
+
 # rectangle_intersection.cc
 
 $(BUILD_DIR)/rectangle_intersection: $(SRC_DIR)/rectangle_intersection.cc | $(BUILD_DIR)
@@ -2583,6 +2593,7 @@ all: \
     $(BUILD_DIR)/random_subset \
 	$(BUILD_DIR)/range_of_k \
     $(BUILD_DIR)/range_lookup_in_bst \
+	$(BUILD_DIR)/real_division \
     $(BUILD_DIR)/real_square_root \
     $(BUILD_DIR)/rectangle_intersection \
     $(BUILD_DIR)/refueling_schedule \
