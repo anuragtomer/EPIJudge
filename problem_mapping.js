@@ -1612,7 +1612,7 @@ problem_mapping = {
         },
         "12.03 Search a cyclically sorted array": {
             "C++: search_shifted_sorted_array.cc": {
-				"passed": 307,
+                "passed": 307,
                 "total": 307
             },
             "Java: SearchShiftedSortedArray.java": {
@@ -1624,34 +1624,34 @@ problem_mapping = {
                 "total": 307
             }
         },
-		"12.03.01 Search max in increasing-decreasing array": {
-			"C++: search_max_increasing_decreasing.cc": {
-				"passed": 5,
-				"total": 5
-			},
-			"Java: SearchMaxIncreasingDecreasing.java": {
-				"passed": 0,
-				"total": 5
-			},
-			"Python: search_max_increasing_decreasing.py": {
-				"passed": 0,
-				"total": 5
-			}
-		},
-		"12.03.02 Search k in cyclical-rotated array": {
-			"C++: search_k_in_rotated.cc": {
-				"passed": 0,
-				"total": 16
-			},
-			"Java: SearchKInRotated.java": {
-				"passed": 0,
-				"total": 16
-			},
-			"Python: search_k_in_rotated.py": {
-				"passed": 0,
-				"total": 16
-			}
-		},
+        "12.03.01 Search max in increasing-decreasing array": {
+            "C++: search_max_increasing_decreasing.cc": {
+                "passed": 5,
+                "total": 5
+            },
+            "Java: SearchMaxIncreasingDecreasing.java": {
+                "passed": 0,
+                "total": 5
+            },
+            "Python: search_max_increasing_decreasing.py": {
+                "passed": 0,
+                "total": 5
+            }
+        },
+        "12.03.02 Search k in cyclical-rotated array": {
+            "C++: search_k_in_rotated.cc": {
+                "passed": 16,
+                "total": 16
+            },
+            "Java: SearchKInRotated.java": {
+                "passed": 0,
+                "total": 16
+            },
+            "Python: search_k_in_rotated.py": {
+                "passed": 0,
+                "total": 16
+            }
+        },
         "12.04 Compute the integer square root": {
             "C++: int_square_root.cc": {
                 "passed": 0,
