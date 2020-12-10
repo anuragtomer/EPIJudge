@@ -1682,21 +1682,21 @@ problem_mapping = {
         },
         "12.05.01 Compute x/y for real numbers without using division/log/exp.": {
             "C++: real_division.cc": {
-				"passed": 8,
-				"total": 8
+                "passed": 8,
+                "total": 8
             },
             "Java: RealDivision.java": {
                 "passed": 0,
-				"total": 8
+                "total": 8
             },
             "Python: real_division.py": {
                 "passed": 0,
-				"total": 8
+                "total": 8
             }
         },
         "12.06 Search in a 2D sorted array": {
             "C++: search_row_col_sorted_matrix.cc": {
-                "passed": 0,
+                "passed": 194,
                 "total": 194
             },
             "Java: SearchRowColSortedMatrix.java": {
