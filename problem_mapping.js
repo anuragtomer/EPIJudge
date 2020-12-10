@@ -1666,34 +1666,34 @@ problem_mapping = {
                 "total": 2000
             }
         },
-		"12.05 Compute the real square root": {
-			"C++: real_square_root.cc": {
-				"passed": 11003,
-				"total": 11003
-			},
-			"Java: RealSquareRoot.java": {
-				"passed": 0,
-				"total": 11003
-			},
-			"Python: real_square_root.py": {
-				"passed": 0,
-				"total": 11003
-			}
-		},
-		"12.05.01 Compute x/y for real numbers without using division/log/exp.": {
-			"C++: real_division.cc": {
-				"passed": 11003,
-				"total": 5
-			},
-			"Java: RealDivision.java": {
-				"passed": 0,
-				"total": 5
-			},
-			"Python: real_division.py": {
-				"passed": 0,
-				"total": 5
-			}
-		},
+        "12.05 Compute the real square root": {
+            "C++: real_square_root.cc": {
+                "passed": 11003,
+                "total": 11003
+            },
+            "Java: RealSquareRoot.java": {
+                "passed": 0,
+                "total": 11003
+            },
+            "Python: real_square_root.py": {
+                "passed": 0,
+                "total": 11003
+            }
+        },
+        "12.05.01 Compute x/y for real numbers without using division/log/exp.": {
+            "C++: real_division.cc": {
+				"passed": 8,
+				"total": 8
+            },
+            "Java: RealDivision.java": {
+                "passed": 0,
+				"total": 8
+            },
+            "Python: real_division.py": {
+                "passed": 0,
+				"total": 8
+            }
+        },
         "12.06 Search in a 2D sorted array": {
             "C++: search_row_col_sorted_matrix.cc": {
                 "passed": 0,
