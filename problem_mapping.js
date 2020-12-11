@@ -1710,7 +1710,7 @@ problem_mapping = {
         },
         "12.07 Find the min and max simultaneously": {
             "C++: search_for_min_max_in_array.cc": {
-                "passed": 0,
+                "passed": 501,
                 "total": 501
             },
             "Java: SearchForMinMaxInArray.java": {
