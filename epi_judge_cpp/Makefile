@@ -1283,6 +1283,16 @@ maximum_subarray_in_circular_array: $(BUILD_DIR)/maximum_subarray_in_circular_ar
 .PHONY: maximum_subarray_in_circular_array
 
 
+# median_in_array.cc
+
+$(BUILD_DIR)/median_in_array: $(SRC_DIR)/median_in_array.cc | $(BUILD_DIR)
+	$(CXX_COMPILER) $(CXX_FLAGS_DEBUG) -o $@ $<
+median_in_array: $(BUILD_DIR)/median_in_array
+	$< $(PROGRAM_ARGS)
+
+.PHONY: median_in_array
+
+
 # minimum_distance_3_sorted_arrays.cc
 
 $(BUILD_DIR)/minimum_distance_3_sorted_arrays: $(SRC_DIR)/minimum_distance_3_sorted_arrays.cc | $(BUILD_DIR)
@@ -2557,6 +2567,7 @@ all: \
 	$(BUILD_DIR)/max_tree \
     $(BUILD_DIR)/max_water_trappable \
     $(BUILD_DIR)/maximum_subarray_in_circular_array \
+	$(BUILD_DIR)/median_in_array \
     $(BUILD_DIR)/minimum_distance_3_sorted_arrays \
     $(BUILD_DIR)/minimum_points_covering_intervals \
     $(BUILD_DIR)/minimum_waiting_time \

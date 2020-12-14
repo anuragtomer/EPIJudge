@@ -1721,21 +1721,63 @@ problem_mapping = {
                 "passed": 0,
                 "total": 501
             }
-        },
-        "12.08 Find the kth largest element": {
-            "C++: kth_largest_in_array.cc": {
-                "passed": 503,
-                "total": 503
-            },
-            "Java: KthLargestInArray.java": {
-                "passed": 0,
-                "total": 503
-            },
-            "Python: kth_largest_in_array.py": {
-                "passed": 0,
-                "total": 503
-            }
-        },
+		},
+		"12.08 Find the kth largest element": {
+			"C++: kth_largest_in_array.cc": {
+				"passed": 503,
+				"total": 503
+			},
+			"Java: KthLargestInArray.java": {
+				"passed": 0,
+				"total": 503
+			},
+			"Python: kth_largest_in_array.py": {
+				"passed": 0,
+				"total": 503
+			}
+		},
+		"12.08.01 Find the median element": {
+			"C++: median_in_array.cc": {
+				"passed": 0,
+				"total": 5
+			},
+			"Java: MedianInArray.java": {
+				"passed": 0,
+				"total": 5
+			},
+			"Python: median_in_array.py": {
+				"passed": 0,
+				"total": 5
+			}
+		},
+		"12.08.02 Find the kth largest element with duplicates": {
+			"C++: kth_largest_in_array_with_duplicates.cc": {
+				"passed": 0,
+				"total": 5
+			},
+			"Java: KthLargestInArrayWithDuplicates.java": {
+				"passed": 0,
+				"total": 5
+			},
+			"Python: kth_largest_in_array_with_duplicates.py": {
+				"passed": 0,
+				"total": 5
+			}
+		},
+		"12.08.03 Minimize distance for residents": {
+			"C++: minimize_resident_distance.cc": {
+				"passed": 0,
+				"total": 5
+			},
+			"Java: MinimizeResidentDistance.java": {
+				"passed": 0,
+				"total": 5
+			},
+			"Python: minimize_resident_distance.py": {
+				"passed": 0,
+				"total": 5
+			}
+		},
         "12.09 Find the missing IP address": {
             "C++: absent_value_array.cc": {
                 "passed": 0,
